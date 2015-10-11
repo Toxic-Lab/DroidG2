@@ -12,6 +12,5 @@ author:
 production_url : http://toxic-lab.github.io
 ads:
     google: false
-permalink: short-urls-jekyll 
 url: http://toxic-lab.github.io
 baseurl: /DroidG2
