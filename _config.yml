@@ -12,4 +12,4 @@ author:
 production_url : http://toxic-lab.github.io
 ads:
     google: false
-pages: ["https://github.com/Toxic-Lab/DroidG2/zipball/master","https://github.com/Toxic-Lab/DroidG2/tarball/master", "https://github.com/Toxic-Lab/DroidG2"]
+permalink: short-urls-jekyll 
