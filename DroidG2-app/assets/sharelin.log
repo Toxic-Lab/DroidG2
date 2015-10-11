@@ -1,0 +1,35 @@
+1 [11:39:57] Starting Sharelin
+1 [11:39:57] Loading settings
+1 [11:39:57] Loading hubs list
+1 [11:39:57] Hub cache size: 0
+1 [11:39:57] Starting share manager
+1 [11:39:57] We have 2 file(s) in share.
+1 [11:39:57] Warning! Incomming connections are restricted. Sharelin will be less effective. See sharelin.conf
+1 [11:39:57] Loading downloads
+1 [11:39:57] 0 download(s) created.
+1 [11:39:57] Starting web ui server on port 4080
+1 [11:39:57] Searching style 'default' in /home/tom/.sharelin/webui/default => Not found
+1 [11:39:57] Searching style 'default' in /usr/local/share/sharelin/webui/default => Found
+2 [11:39:57] Loading default webcaches
+1 [11:39:57] Running io
+1 [11:39:57] Scanning shared folders
+1 [11:39:57] Shared folders scanned. Applying changes.
+1 [11:39:57] New: 0
+1 [11:39:57] Removed: 2
+1 [11:39:57] Total: 0
+1 [11:39:58] Discovery started for: gwc.dyndns.info
+3 [11:39:58] Resolved updates host: 216.34.181.96:80
+2 [11:39:58] Connected to updates host. Requesting information.
+3 [11:39:58] Got reply from update server
+1 [11:39:58] New version is available: 0.2.2
+1 [11:39:58] (app) Fixed bug with tiger tree validation. The last chunk of file was incorrectly verified. This led to
+1 [11:39:58] 	invalidating of chunk, thus it's redownloading.
+1 [11:39:58] (app) Fixed some compiling errors
+1 [11:39:58] (ui)  Increased numbers precision
+1 [11:39:58] (wui) Fixed bugs in templates
+1 [11:39:58] Resolved GWebCache ( http://gwc.dyndns.info:28960/gwc.php ) endpoint: 99.71.240.160:28960
+1 [11:39:58] Connected to gwc http://gwc.dyndns.info:28960/gwc.php
+1 [11:40:14] Got reply from gwc http://gwc.dyndns.info:28960/gwc.php
+1 [11:40:14] Couldn't handle web cache ( http://gwc.dyndns.info:28960/gwc.php) reply => Bad reply code: 301  Moved Permanently
+1 [11:40:15] Discovery started for: gwc.lame.net
+1 [11:40:15] Error resolving http://gwc.lame.net/gwcii.php

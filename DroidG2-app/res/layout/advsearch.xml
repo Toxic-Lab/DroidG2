@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:myapp="http://schemas.android.com/apk/res/org.toxiclab.droidg2">
+    <TextView android:layout_alignParentTop="true" android:layout_height="50dp" android:id="@+id/textView1" android:layout_width="100dp" android:textSize="20dp" android:text="@string/asname"></TextView>
+    <EditText android:layout_toRightOf="@+id/textView1" android:id="@+id/editText1" android:layout_height="wrap_content" android:text="" android:layout_alignTop="@+id/textView1" android:layout_alignBottom="@+id/textView1" android:layout_width="match_parent"></EditText>
+    <TextView android:layout_below="@+id/textView1" android:layout_width="wrap_content" android:layout_height="50dp" android:id="@+id/textView2" android:layout_alignLeft="@+id/textView1" android:layout_alignRight="@+id/textView1" android:textSize="20dp" android:text="@string/asminsize"></TextView>
+    <EditText android:layout_toRightOf="@+id/textView2" android:id="@+id/editText2" android:layout_height="wrap_content" android:text="0" android:layout_alignTop="@+id/textView2" android:layout_alignBottom="@+id/textView2" android:layout_width="match_parent"></EditText>
+    <TextView android:layout_below="@+id/textView2" android:layout_width="wrap_content" android:layout_height="50dp" android:id="@+id/textView3" android:layout_alignLeft="@+id/textView2" android:layout_alignRight="@+id/textView2" android:textSize="20dp" android:text="@string/asmaxsize"></TextView>
+    <EditText android:layout_toRightOf="@+id/textView3" android:id="@+id/editText3" android:layout_height="wrap_content" android:text="0" android:layout_alignTop="@+id/textView3" android:layout_alignBottom="@+id/textView3" android:layout_width="match_parent"></EditText>
+    <TextView android:layout_below="@+id/textView3" android:layout_width="wrap_content" android:layout_height="50dp" android:id="@+id/textView4" android:layout_alignLeft="@+id/textView3" android:layout_alignRight="@+id/textView3" android:textSize="20dp" android:text="@string/asext"></TextView>
+    <Button android:layout_toRightOf="@+id/textView4" android:text="any" android:id="@+id/button1" android:layout_height="wrap_content" android:layout_alignTop="@+id/textView4" android:layout_alignBottom="@+id/textView4" android:layout_width="match_parent"></Button>
+    <TextView android:layout_below="@+id/textView4" android:layout_width="wrap_content" android:layout_height="50dp" android:id="@+id/textView5" android:layout_alignLeft="@+id/textView4" android:layout_alignRight="@+id/textView4" android:textSize="20dp" android:text="@string/asftype"></TextView>
+    <Button android:layout_below="@+id/textView5" android:id="@+id/button2" android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/Search"></Button>
+    <EditText android:layout_toRightOf="@+id/textView5" android:id="@+id/editText5" android:layout_height="50dp" android:text="" android:layout_alignTop="@+id/textView5" android:layout_alignBottom="@+id/textView5" android:layout_width="match_parent"></EditText>
+    
+    <com.admob.android.ads.AdView
+	android:id="@+id/ad"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	myapp:backgroundColor="#000000"
+	myapp:primaryTextColor="#FFFFFF"
+	myapp:secondaryTextColor="#CCCCCC"
+	android:layout_alignParentBottom="true"/>
+</RelativeLayout>

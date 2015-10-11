@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="hello">Hello World, main!</string>
+    <string name="app_name">DroidG2</string>
+<string name="downtitle">Download</string>
+    <string name="conntitle">Connection</string>
+    <string name="Search">Search</string>
+    <string name="sort">Sort</string>
+    <string name="searchtitle">Search</string>
+    <string name="connect">Connect</string>
+    <string name="status">Connection status</string>
+    <string name="back">back</string>
+    <string name="Disconnect">Disconnect and exit</string>
+    <string name="go2Web">Go to web interface</string>
+    <string name="advSearch">Advance Search</string>
+    <string name="intitle">Incoming files</string>
+    <string name="connect2">Connect to %d servers</string>
+    <string name="advSearchS">Adv. search</string>
+    <string name="refresh">Refresh</string>
+    <string name="sitemresult">Result: %s</string>
+    <string name="Download">Download</string>
+    <string-array name="sortEn">
+        <item>Name asc</item>
+        <item>Name desc</item>
+        <item>Size asc</item>
+        <item>Size desc</item>
+        <item>Number of source asc</item>
+        <item>Number of source desc</item>
+        <item>none</item>
+    </string-array>
+    <string name="creditcon"/>
+    <string name="credit">Credit</string>
+    <string name="scpause">Pause</string>
+    <string name="scresume">Resume</string>
+    <string name="scremove">Remove</string>
+    <string name="asname">Name</string>
+    <string name="asminsize">Min. Size</string>
+    <string name="asmediatitle">Media type</string>
+    <string name="asftype">File type</string>
+    <string name="asmaxsize">Max. Size</string>
+    <string name="asext">Media</string>
+    <string-array name="asmedia">
+        <item>any</item>
+        <item>video</item>
+        <item>audio</item>
+        <item>image</item>
+        <item>document</item>
+        <item>archive/image</item>
+        <item>program</item>
+    </string-array>
+    <string name="connloading">Loading servers\' info</string>
+    <string name="incomingfile">Incoming files</string>
+    <string-array name="downstatus">
+        <item>Transfer</item>
+        <item>Hash</item>
+        <item>Move</item>
+        <item>Pause</item>
+        <item>Queued</item>
+        <item>Error</item>
+    </string-array>
+	<string name="cncning">Connecting</string>
+    <string name="cnhdshake">Handshaking</string>
+    <string name="cncned">Connected</string>
+	<string name="sresult">Search result</string>
+	<string name="inconremove">Remove</string>
+    <string name="inconopen">Open</string>
+</resources>

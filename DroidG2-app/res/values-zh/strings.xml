@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="hello">Hello World, main!</string>
+    <string name="app_name">DroidG2</string>
+<string name="downtitle">下載</string>
+    <string name="conntitle">連線</string>
+    <string name="Search">搜尋</string>
+    <string name="sort">排序</string>
+    <string name="searchtitle">搜尋</string>
+    <string name="connect">連線</string>
+    <string name="status">連線狀態</string>
+    <string name="back">後退</string>
+    <string name="Disconnect">斷線並離開</string>
+    <string name="go2Web">前住網頁介面</string>
+    <string name="advSearch">高級搜尋</string>
+    <string name="intitle">已下載檔案</string>
+    <string name="connect2">連線到%d伺服器</string>
+    <string name="advSearchS">高級搜尋</string>
+    <string name="refresh">更新</string>
+    <string name="sitemresult">結果: %s</string>
+    <string name="Download">下載</string>
+    <string-array name="sortEn">
+        <item>名稱 順</item>
+        <item>名稱 逆</item>
+        <item>大小 順</item>
+        <item>大小 逆</item>
+        <item>來源數目 順</item>
+        <item>來源數目 逆</item>
+        <item>沒有</item>
+    </string-array>
+    <string name="creditcon"/>
+    <string name="credit">關於</string>
+    <string name="scpause">暫停</string>
+    <string name="scresume">繼續</string>
+    <string name="scremove">移除</string>
+    <string name="asname">名稱</string>
+    <string name="asminsize">大小(最小)</string>
+    <string name="asmediatitle">媒體</string>
+    <string name="asftype">檔案類別</string>
+    <string name="asmaxsize">大小(最大)</string>
+    <string name="asext">媒體</string>
+    <string-array name="asmedia">
+        <item>所有</item>
+        <item>影片</item>
+        <item>聲音</item>
+        <item>圖片</item>
+        <item>文件</item>
+        <item>壓縮／圖片</item>
+        <item>程序</item>
+    </string-array>
+    <string name="connloading">讀取伺服器資訊</string>
+    <string name="incomingfile">已下載檔案</string>
+    <string-array name="downstatus">
+        <item>傳輸中</item>
+        <item>雜湊計算中</item>
+        <item>移動中</item>
+        <item>暫停</item>
+        <item>等候</item>
+        <item>錯誤</item>
+    </string-array>
+    <string name="cncning">連線中</string>
+    <string name="cnhdshake">握手中</string>
+    <string name="cncned">已連線</string>
+    <string name="sresult">搜尋結果</string>
+    <string name="inconremove">移除</string>
+    <string name="inconopen">開啟</string>
+</resources>

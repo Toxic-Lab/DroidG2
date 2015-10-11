@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="org.toxiclab.droidg2"
+      android:versionCode="1"
+      android:versionName="1.0">
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="false">
+        <activity android:name=".main"
+                  android:label="@string/app_name" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+		<activity android:name=".ConnectionActivity" android:screenOrientation="portrait" android:label="@string/status"></activity>
+		<activity android:name="SearchActivity" android:screenOrientation="portrait" android:label="@string/Search"></activity>
+		<activity android:name="DownloadActivity" android:screenOrientation="portrait" android:label="@string/Download"></activity>
+		<activity android:name="AdvanceSearch" android:screenOrientation="portrait" android:label="@string/advSearch"></activity>
+		<activity android:name="Search_2_Activity" android:screenOrientation="portrait"></activity>
+		<activity android:name="IncomingActivity" android:screenOrientation="portrait" android:label="@string/intitle"></activity>
+
+
+    </application>
+</manifest>

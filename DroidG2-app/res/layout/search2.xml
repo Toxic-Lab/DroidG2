@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:myapp="http://schemas.android.com/apk/res/org.toxiclab.droidg2">
+    <ListView android:id="@+id/listView1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_above="@+id/relativeLayout1"></ListView>
+</RelativeLayout>

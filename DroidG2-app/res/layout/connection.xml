@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:myapp="http://schemas.android.com/apk/res/org.toxiclab.droidg2">
+    <TextView android:id="@+id/textView1" android:layout_height="wrap_content" android:textSize="20dp" android:layout_width="match_parent" android:text="@string/connloading"></TextView>
+    
+   	<com.admob.android.ads.AdView
+	android:id="@+id/ad"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	myapp:backgroundColor="#000000"
+	myapp:primaryTextColor="#FFFFFF"
+	myapp:secondaryTextColor="#CCCCCC" android:layout_alignParentBottom="true"/>
+    
+    
+    <ListView android:layout_width="match_parent" android:id="@+id/listView1" android:layout_below="@+id/textView1" android:layout_height="match_parent" android:layout_above="@id/ad"></ListView>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/item1" android:titleCondensed="@string/scremove" android:title="@string/scremove"></item>
+    <item android:id="@+id/item2" android:titleCondensed="@string/scresume" android:title="@string/scresume"></item>
+    <item android:id="@+id/item3" android:titleCondensed="@string/scpause" android:title="@string/scpause"></item>
+</menu>

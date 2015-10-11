@@ -1,0 +1,54 @@
+#body {overflow-y:scroll;} 
+a
+{
+	text-decoration: none;
+	color: #FF6600;
+}
+a:active
+{
+	text-decoration: none;
+	color: #FF6600;
+}
+a:visited
+{
+	text-decoration: none;
+	color: #FF6600;
+}
+
+a:hover
+{
+	text-decoration: underline;
+	color: #FF6600;
+}
+
+table {font-size:12px;}
+
+.texta {
+	font-size: 12px;
+	background-color: #DDDDDD;
+	border: 1px solid #666666;
+}
+
+.button {
+	border: 1px solid;
+}
+
+.tinyform {
+	margin: 0px; padding: 0px;
+}
+
+.hl {
+	background-color: #e8e8e8;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+
+.nohl {
+	background-color: #ffffff;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:myapp="http://schemas.android.com/apk/res/org.toxiclab.droidg2"
+    >
+    <ImageView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/imageView1" android:src="@drawable/gnutella"></ImageView>
+    <Button android:id="@+id/button1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/status"></Button>
+    <Button android:id="@+id/button2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/Search"></Button>
+    <Button android:id="@+id/button3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/Download"></Button>
+    <Button android:layout_height="wrap_content" android:id="@+id/button5" android:layout_width="match_parent" android:text="@string/incomingfile"></Button>
+    <Button android:id="@+id/button4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/go2Web"></Button>
+    <Button android:text="@string/Disconnect" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/button6"></Button>
+
+</LinearLayout>
