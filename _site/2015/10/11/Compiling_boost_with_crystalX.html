@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="author" content="Toxic-lab (HK)" />
+    <title>Droid-G2 development guide 1/3</title>
+
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+    <script src="/javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Droid G2 - Gnutella 2 client on Android</h1>
+        <p class="header">Droid G2 - Gnutella 2 client on Android</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/Toxic-Lab/DroidG2/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/Toxic-Lab/DroidG2/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/Toxic-Lab/DroidG2">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/Toxic-Lab">Toxic-Lab</a></p>
+      </header>
+
+      <section>
+      <div class="post">
+    
+  </header>
+    
+  <h1>Droid-G2 development guide 1/3</h1>
+  <p class="meta">Oct 11, 2015</p>
+
+  <article class="post-content">
+  <p>Creating the Droid G2 android application requires 3 steps:</p>
+
+<ul>
+  <li>Compile the boost library into static libraries using Android NDK
+    <ul>
+      <li>Please beware you are compile against the ARM platform. check the result with readelf command.</li>
+    </ul>
+  </li>
+  <li>Compile the Sharelin library and linked the boost static libraries
+    <ul>
+      <li>The output is the libsharelin.so, which is a dynamic library which is loaded by JVM at runtime.</li>
+    </ul>
+  </li>
+  <li>Create a Android application, load the libsharelin.so, and start the Gnutella2 client on android through Java native interface</li>
+</ul>
+
+<p>I will go through each step with a post.<br />
+In this post, I am going to reproduce my way to compile the boost library on Android.</p>
+
+<p>Environment: Ubuntu, CrystalX NDK, CMake.</p>
+
+<p>Steps:<br />
+* Download Boost library version 1.45 <br />
+* Download Crystal Android NDK 4 <a href="https://www.crystax.net/android/ndk/4">https://www.crystax.net/android/ndk/4</a> <br />
+* Apply patches to the Boost library <br />
+* Follow the instruction from the <a href="https://github.com/MysticTreeGames/Boost-for-Android/blob/master/README.md">https://github.com/MysticTreeGames/Boost-for-Android/blob/master/README.md</a></p>
+
+<p>The following boost library in static library format (.a) is needed to compile the sharelin.<br />
+    * Filesyste library<br />
+    * Multi-thread library<br />
+    * System library</p>
+
+<p>Check the above library using readelf command before proceeding to the next step. This really save you a lot of debugging time.</p>
+
+<p>Congratulations, you can proceed to the next step.</p>
+
+  </article>
+
+</div>
+
+      </section>
+
+      <footer>
+      <p><small>Hosted on <a href="http://pages.github.com/">GitHub Pages</a> using the Dinky theme
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+  </body>
+</html>

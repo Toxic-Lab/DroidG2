@@ -1,0 +1,15 @@
+markdown: kramdown
+kramdown:
+  input: GFM # Enable GitHub Flavored Markdown (fenced code blocks
+author:
+    name: Lai Yiu Ming
+title: Droid G2 - Gnutella 2 client on Android
+tagline: Droid G2 - Gnutella 2 client on Android
+author:
+    name: Toxic-lab (HK)
+    email: kongutoxiclab@gmail.com
+    github: toxic-lab
+production_url : http://toxic-lab.github.io
+ads:
+    google: false
+pages: ["https://github.com/Toxic-Lab/DroidG2/zipball/master","https://github.com/Toxic-Lab/DroidG2/tarball/master", "https://github.com/Toxic-Lab/DroidG2"]

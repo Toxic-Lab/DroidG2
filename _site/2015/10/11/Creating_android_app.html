@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="author" content="Toxic-lab (HK)" />
+    <title>Droid-G2 development guide 3/3</title>
+
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+    <script src="/javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Droid G2 - Gnutella 2 client on Android</h1>
+        <p class="header">Droid G2 - Gnutella 2 client on Android</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/Toxic-Lab/DroidG2/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/Toxic-Lab/DroidG2/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/Toxic-Lab/DroidG2">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/Toxic-Lab">Toxic-Lab</a></p>
+      </header>
+
+      <section>
+      <div class="post">
+    
+  </header>
+    
+  <h1>Droid-G2 development guide 3/3</h1>
+  <p class="meta">Oct 11, 2015</p>
+
+  <article class="post-content">
+  <p>Welcome to the third and final step of compiling the Droid-G2.</p>
+
+<p>The goal of this step is to create Droid-G2 application, create the APK file, deploy and run Droid-G2 on the Android platform</p>
+
+<p>Complete the following steps to create the APK file:</p>
+
+<ul>
+  <li>Place the libsharelin.so to the folder /libs/armeabi</li>
+  <li>Declare the native functions. Example: <a href="https://github.com/Toxic-Lab/DroidG2/blob/master/DroidG2-app/src/org/toxiclab/droidg2/main.java">https://github.com/Toxic-Lab/DroidG2/blob/master/DroidG2-app/src/org/toxiclab/droidg2/main.java</a></li>
+</ul>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">// A list of native method declaration </span>
+<span class="kd">public</span> <span class="kd">native</span> <span class="kt">void</span> <span class="nf">start_sharelin</span><span class="o">(</span><span class="n">String</span> <span class="n">root</span><span class="o">);</span>
+<span class="kd">public</span> <span class="kd">native</span> <span class="kt">void</span> <span class="nf">createSearch</span><span class="o">(</span><span class="n">String</span> <span class="n">dn</span><span class="o">,</span> <span class="n">String</span> <span class="n">min</span><span class="o">,</span> <span class="n">String</span> <span class="n">max</span><span class="o">,</span> <span class="n">String</span> <span class="n">media</span><span class="o">,</span> <span class="n">String</span> <span class="n">ext</span><span class="o">);</span>
+<span class="kd">public</span> <span class="kd">native</span> <span class="n">toxiclab_search</span><span class="o">[]</span> <span class="nf">showSearch</span><span class="o">();</span>
+<span class="kd">public</span> <span class="kd">native</span> <span class="n">toxiclab_searchResult</span><span class="o">[]</span> <span class="nf">showSearchResult</span><span class="o">(</span><span class="kt">int</span> <span class="n">id</span><span class="o">,</span> <span class="n">String</span> <span class="n">sortBy</span><span class="o">,</span> <span class="kt">boolean</span> <span class="n">forward</span><span class="o">);</span>
+<span class="kd">public</span> <span class="kd">native</span> <span class="n">toxiclab_hub</span><span class="o">[]</span> <span class="nf">showHubs</span><span class="o">();</span>
+<span class="kd">public</span> <span class="kd">native</span> <span class="n">toxiclab_hub</span><span class="o">[]</span> <span class="nf">showHandshake</span><span class="o">();</span>
+<span class="kd">public</span> <span class="kd">native</span> <span class="n">toxiclab_downloadResult</span> <span class="nf">showDownload</span><span class="o">(</span><span class="kt">int</span> <span class="n">id</span><span class="o">);</span>
+<span class="kd">public</span> <span class="kd">native</span> <span class="n">toxiclab_download</span><span class="o">[]</span> <span class="nf">showAllDownload</span><span class="o">(</span><span class="n">String</span> <span class="n">sortBy</span><span class="o">,</span> <span class="kt">boolean</span> <span class="n">forward</span><span class="o">);</span>
+<span class="kd">public</span> <span class="kd">native</span> <span class="kt">boolean</span> <span class="nf">createDownload</span><span class="o">(</span><span class="kt">int</span> <span class="n">searchID</span><span class="o">,</span> <span class="kt">int</span> <span class="n">resultID</span><span class="o">);</span>
+<span class="kd">public</span> <span class="kd">native</span> <span class="n">toxiclab_incoming</span><span class="o">[]</span> <span class="nf">showIncoming</span><span class="o">();</span>
+<span class="kd">public</span> <span class="kd">native</span> <span class="kt">void</span> <span class="nf">pauseDownload</span><span class="o">(</span><span class="kt">int</span> <span class="n">id</span><span class="o">);</span>
+<span class="kd">public</span> <span class="kd">native</span> <span class="kt">void</span> <span class="nf">resumeDownload</span><span class="o">(</span><span class="kt">int</span> <span class="n">id</span><span class="o">);</span>
+<span class="kd">public</span> <span class="kd">native</span> <span class="kt">void</span> <span class="nf">deleteDownload</span><span class="o">(</span><span class="kt">int</span> <span class="n">id</span><span class="o">);</span>
+<span class="kd">public</span> <span class="kd">native</span> <span class="kt">void</span> <span class="nf">pauseSearch</span><span class="o">(</span><span class="kt">int</span> <span class="n">id</span><span class="o">);</span>
+<span class="kd">public</span> <span class="kd">native</span> <span class="kt">void</span> <span class="nf">deleteSearch</span><span class="o">(</span><span class="kt">int</span> <span class="n">id</span><span class="o">);</span>
+<span class="kd">public</span> <span class="kd">native</span> <span class="kt">void</span> <span class="nf">resumeSearch</span><span class="o">(</span><span class="kt">int</span> <span class="n">id</span><span class="o">);</span>
+<span class="kd">public</span> <span class="kd">native</span> <span class="kt">void</span> <span class="nf">killCore</span><span class="o">();</span></code></pre></div>
+
+<ul>
+  <li>Create a static block to load the native library</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">static</span><span class="o">{</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">loadLibrary</span><span class="o">(</span><span class="s">&quot;sharelin&quot;</span><span class="o">);</span>
+<span class="o">}</span></code></pre></div>
+
+<ul>
+  <li>Implement the rest of the user interface</li>
+  <li>Compile the whole project and generate the APK.</li>
+</ul>
+
+<p>Great, here is all you have to know about compiling the Droid-G2 Android app. If you want to know more about a particular step or you get stuck, you can drop an email to <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#107;&#111;&#110;&#103;&#117;&#116;&#111;&#120;&#105;&#099;&#108;&#097;&#098;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#107;&#111;&#110;&#103;&#117;&#116;&#111;&#120;&#105;&#099;&#108;&#097;&#098;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>, and we will try our best to spare some time to answer your questions.</p>
+
+  </article>
+
+</div>
+
+      </section>
+
+      <footer>
+      <p><small>Hosted on <a href="http://pages.github.com/">GitHub Pages</a> using the Dinky theme
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+  </body>
+</html>
